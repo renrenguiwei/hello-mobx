@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.2.2",
-    "@babel/plugin-proposal-decorators": "^7.4.0",
     "@svgr/webpack": "4.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
@@ -119,7 +118,17 @@
       "react-app"
     ],
     "plugins": [
-      ["@babel/plugin-proposal-decorators", { "decoratorsBeforeExport": true }]
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      ["@babel/plugin-proposal-class-properties", { "loose": true }]
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-decorators": "^7.4.0"
   }
 }

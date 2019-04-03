@@ -1,4 +1,4 @@
-import { observable, autorun } from 'mobx';
+import { observable, autorun, toJS, isObservableObject } from 'mobx';
 
 class BirdStore {
   // object array map
@@ -12,4 +12,6 @@ export default store;
 autorun(() => {
   console.log('print');
   console.log(store.birds);
+  console.log(toJS(store.birds));
+  console.log(isObservableObject(store));
 })
