@@ -5,7 +5,7 @@ class BirdStore {
   @observable birds = ['rails365'];
 }
 
-const store = window.store = new BirdStore();
+const store = new BirdStore();
 
 export default store;
 
