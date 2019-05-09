@@ -19,7 +19,8 @@ class App extends Component {
       <div className="App">
         <DevTools />
         <header className="App-header">
-          <p>{ this.props.BirdStore.birds[0] }</p>
+          <p>{ this.props.BirdStore.firstBird }</p>
+          <p>{ this.props.BirdStore.birdCount }</p>
 
           <form onSubmit={ e => this.handleSubmit(e) }>
             <input type="text" placeholder="Enter your bird name" ref={ input => this.bird = input } />

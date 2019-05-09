@@ -1,4 +1,4 @@
-import { observable, autorun, action, toJS, isObservableObject } from 'mobx';
+import { observable, autorun, computed, action, toJS, isObservableObject } from 'mobx';
 
 class BirdStore {
   // object array map
@@ -8,8 +8,18 @@ class BirdStore {
     this.birds = ["qiuzhi99"];
   }
 
+  // 修改
   @action addBird = (bird) => {
     this.birds.unshift(bird);
+  }
+
+  // 只读
+  @computed get firstBird() {
+    return "第一只鸟的名字： " + this.birds[0]
+  }
+
+  @computed get birdCount() {
+    return this.birds.length;
   }
 }
 
