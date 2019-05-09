@@ -9,7 +9,7 @@ class App extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const bird = this.bird.value;
-    this.props.BirdStore.birds.unshift(bird);
+    this.props.BirdStore.addBird(bird);
     console.log(this.props.BirdStore.birds.length);
   }
 

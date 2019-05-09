@@ -1,8 +1,16 @@
-import { observable, autorun, toJS, isObservableObject } from 'mobx';
+import { observable, autorun, action, toJS, isObservableObject } from 'mobx';
 
 class BirdStore {
   // object array map
-  @observable birds = ['rails365'];
+  @observable birds;
+
+  constructor() {
+    this.birds = ["qiuzhi99"];
+  }
+
+  @action addBird = (bird) => {
+    this.birds.unshift(bird);
+  }
 }
 
 const store = new BirdStore();
