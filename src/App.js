@@ -10,6 +10,7 @@ class App extends Component {
     e.preventDefault();
     const bird = this.bird.value;
     this.props.BirdStore.addBird(bird);
+    // this.props.BirdStore.birds.unshift(bird);
     console.log(this.props.BirdStore.birds.length);
   }
 
