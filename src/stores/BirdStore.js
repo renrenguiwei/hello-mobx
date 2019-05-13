@@ -5,7 +5,7 @@ class BirdStore {
   @observable birds;
 
   constructor() {
-    this.birds = [];
+    this.birds = ['qiuzhi99'];
   }
 
   // 修改
@@ -28,8 +28,4 @@ const store = window.store1 = new BirdStore();
 export default store;
 
 autorun(() => {
-  console.log('print');
-  console.log(store.firstBird);
-  console.log(store.birds);
-  console.log(store.birds[0]);
 })

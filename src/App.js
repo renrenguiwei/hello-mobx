@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { observer } from "mobx-react"
+import { observer, inject } from "mobx-react"
 import DevTools from 'mobx-react-devtools';
+import Fun from './Fun';
 
+@inject('BirdStore')
 @observer
 class App extends Component {
   handleSubmit = (e) => {
@@ -14,12 +16,14 @@ class App extends Component {
   }
 
   render() {
-    console.log('render');
+    console.log(this.props);
     return (
       <div className="App">
         <DevTools />
         <header className="App-header">
-          { this.props.BirdStore.birds[0] }
+          <Fun />
+
+          { this.props.BirdStore.firstBird }
 
           <form onSubmit={ e => this.handleSubmit(e) }>
             <input type="text" placeholder="Enter your bird name" ref={ input => this.bird = input } />
