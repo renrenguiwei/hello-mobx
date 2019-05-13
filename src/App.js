@@ -11,17 +11,15 @@ class App extends Component {
     const bird = this.bird.value;
     this.props.BirdStore.addBird(bird);
     // this.props.BirdStore.birds.unshift(bird);
-    console.log(this.props.BirdStore.birds.length);
   }
 
   render() {
-    console.log(this.props);
+    console.log('render');
     return (
       <div className="App">
         <DevTools />
         <header className="App-header">
-          <p>{ this.props.BirdStore.firstBird }</p>
-          <p>{ this.props.BirdStore.birdCount }</p>
+          { this.props.BirdStore.birds[0] }
 
           <form onSubmit={ e => this.handleSubmit(e) }>
             <input type="text" placeholder="Enter your bird name" ref={ input => this.bird = input } />

@@ -11,7 +11,6 @@ class BirdStore {
   // 修改
   @action addBird = (bird) => {
     this.birds.unshift(bird);
-    console.log(this.birds);
   }
 
   // 只读
@@ -24,10 +23,13 @@ class BirdStore {
   }
 }
 
-const store = new BirdStore();
+const store = window.store1 = new BirdStore();
 
 export default store;
 
 autorun(() => {
+  console.log('print');
+  console.log(store.firstBird);
   console.log(store.birds);
+  console.log(store.birds[0]);
 })
