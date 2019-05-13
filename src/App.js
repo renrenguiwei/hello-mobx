@@ -5,25 +5,29 @@ import { observer, inject } from "mobx-react"
 import DevTools from 'mobx-react-devtools';
 import Fun from './Fun';
 
-@inject('BirdStore')
+@inject('BirdStore', 'TodoListStore')
 @observer
 class App extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const bird = this.bird.value;
-    this.props.BirdStore.addBird(bird);
+    this.store.addBird(bird);
     // this.props.BirdStore.birds.unshift(bird);
   }
 
+  get store() {
+    return this.props.BirdStore
+  }
+
   render() {
-    console.log(this.props);
+    console.log('render');
     return (
       <div className="App">
         <DevTools />
         <header className="App-header">
           <Fun />
 
-          { this.props.BirdStore.firstBird }
+          { this.store.firstBird }
 
           <form onSubmit={ e => this.handleSubmit(e) }>
             <input type="text" placeholder="Enter your bird name" ref={ input => this.bird = input } />

@@ -1,4 +1,4 @@
-import { observable, computed, action } from "mobx";
+import { observable, computed, action, toJS } from "mobx";
 
 import TodoStore from "./TodoStore";
 
@@ -10,10 +10,17 @@ class TodoListStore {
     return this.todos.filter(todo => !todo.finished).length;
   }
 
+  @computed
+  get firstTodo() {
+    return toJS(this.todos)[0]
+  }
+
   @action
   addTodo(title) {
     this.todos.push(new TodoStore(title));
   }
 }
 
-export default new TodoListStore();
+const store = window.store = new TodoListStore();
+
+export default store;
