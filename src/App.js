@@ -28,7 +28,6 @@ class App extends Component {
         <DevTools />
         <header className="App-header">
           <TodoList />
-          <Fun />
 
           { this.store.firstBird }
 
