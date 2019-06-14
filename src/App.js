@@ -4,9 +4,10 @@ import './App.css';
 import { observer, inject } from "mobx-react"
 import DevTools from 'mobx-react-devtools';
 import Fun from './Fun';
+import { compose } from 'recompose';
 
-@inject('BirdStore', 'TodoListStore')
-@observer
+// @inject('BirdStore', 'TodoListStore')
+// @observer
 class App extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
@@ -39,4 +40,7 @@ class App extends Component {
   }
 }
 
-export default App;
+export default compose(
+  inject('BirdStore', 'TodoListStore'),
+  observer
+)(App);
