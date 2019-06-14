@@ -5,6 +5,7 @@ import { observer, inject } from "mobx-react"
 import DevTools from 'mobx-react-devtools';
 import Fun from './Fun';
 import TodoList from './components/TodoList';
+import Topic from './components/Topic';
 import { compose } from 'recompose';
 
 // @inject('BirdStore', 'TodoListStore')
@@ -27,6 +28,7 @@ class App extends Component {
       <div className="App">
         <DevTools />
         <header className="App-header">
+          <Topic />
           <TodoList />
 
           { this.store.firstBird }

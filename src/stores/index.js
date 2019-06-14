@@ -1,5 +1,6 @@
 import BirdStore from './BirdStore';
 import TodoListStore from './TodoListStore';
+import TopicStore from './TopicStore';
 
 // class Store {
 //   constructor() {
@@ -12,5 +13,6 @@ import TodoListStore from './TodoListStore';
 
 export default {
   BirdStore,
-  TodoListStore
+  TodoListStore,
+  TopicStore
 }
