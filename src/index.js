@@ -8,7 +8,7 @@ import stores from './stores';
 import { configure } from 'mobx';
 import { Provider } from 'mobx-react'
 
-// configure({ enforceActions: "observed" });
+configure({ enforceActions: "observed" });
 
 ReactDOM.render(
   <Provider { ...stores }>
