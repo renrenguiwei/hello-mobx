@@ -9,7 +9,7 @@ class Topic extends Component {
     return (
       <div>
         Topic
-        <button onClick={ () => this.props.TopicStore.loadTopics() }>Get Topic</button>
+        <button onClick={ () => this.props.TopicStore.loadTopicsGenerator() }>Get Topic</button>
         <p>{ this.props.TopicStore.topics[0] && this.props.TopicStore.topics[0]["title"] }</p>
       </div>
     );
