@@ -11,15 +11,17 @@ class Topic extends Component {
     console.log(this.props);
     const store = this.props.TopicStore;
     let data;
-    if (store.loading) {
-      data = "loading...";
+    if (store.error) {
+      data = store.error
+    } else if (store.loading) {
+      data = "loading..."
     } else {
       data = store.topics[0] && store.topics[0]["title"]
     }
     return (
       <div>
         Topic
-        <button onClick={ () => this.props.TopicStore.loadTopicsGenerator() }>Get Topic</button>
+        <button onClick={ () => this.props.TopicStore.loadTopicsInline() }>Get Topic</button>
 
         <p>{ data }</p>
       </div>
