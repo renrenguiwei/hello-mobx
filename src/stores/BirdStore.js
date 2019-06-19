@@ -25,6 +25,21 @@ class BirdStore {
 
 const store = window.store1 = new BirdStore();
 
+
+class Ticker {
+    @observable tick = 0
+
+    // 在函数定义的时候就绑定了正确的 this
+    @action.bound
+    increment() {
+        this.tick++ // 'this' 永远都是正确的
+    }
+}
+
+// window
+const ticker = window.ticker = new Ticker()
+setInterval(ticker.increment, 1000)
+
 export default store;
 
 autorun(() => {

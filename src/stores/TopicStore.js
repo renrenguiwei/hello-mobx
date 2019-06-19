@@ -68,7 +68,7 @@ class TopicStore {
     }
   })
 
-  @action
+  @action('save topics')
   saveTopics(data) {
     this.topics = data;
     this.loading = false;
