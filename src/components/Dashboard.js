@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { inject, observer } from 'mobx-react';
 
 function Dashboard() {
   return (
@@ -12,7 +13,7 @@ function Dashboard() {
                   <i className="fa fa-comments fa-5x"></i>
                 </div>
                 <div className="col-md-6 col-sm-6 text-right">
-                  <p id="reviewCount">1</p>
+                  <p id="reviewCount">{ this.props.ReviewStore.reviewCount }</p>
                   <p className="announcement-text">Reviews</p>
                 </div>
               </div>
@@ -28,7 +29,7 @@ function Dashboard() {
                   <i className="fa fa-star fa-5x"></i>
                 </div>
                 <div className="col-md-6 col-sm-6 text-right">
-                  <p id="averageScores">1</p>
+                  <p id="averageScores">{ this.props.ReviewStore.averageScore }</p>
                   <p className="announcement-text">Average Scores</p>
                 </div>
               </div>
@@ -40,4 +41,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default inject("ReviewStore")(observer(Dashboard));

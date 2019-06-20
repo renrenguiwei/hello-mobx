@@ -1,4 +1,4 @@
-import { observable, autorun, computed, action, toJS, isObservableObject } from 'mobx';
+import { observable, computed, action, toJS } from 'mobx';
 
 class BirdStore {
   // object array map
@@ -23,24 +23,24 @@ class BirdStore {
   }
 }
 
-const store = window.store1 = new BirdStore();
-
-
-class Ticker {
-    @observable tick = 0
-
-    // 在函数定义的时候就绑定了正确的 this
-    @action.bound
-    increment() {
-        this.tick++ // 'this' 永远都是正确的
-    }
-}
-
-// window
-const ticker = window.ticker = new Ticker()
-setInterval(ticker.increment, 1000)
-
+const store = new BirdStore();
+//
+//
+// class Ticker {
+//     @observable tick = 0
+//
+//     // 在函数定义的时候就绑定了正确的 this
+//     @action.bound
+//     increment() {
+//         this.tick++ // 'this' 永远都是正确的
+//     }
+// }
+//
+// // window
+// const ticker = window.ticker = new Ticker()
+// setInterval(ticker.increment, 1000)
+//
 export default store;
-
-autorun(() => {
-})
+//
+// autorun(() => {
+// })

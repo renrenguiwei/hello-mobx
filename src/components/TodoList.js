@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { extendObservable, action, observable } from 'mobx';
+import { action, observable } from 'mobx';
 import { observer, inject } from 'mobx-react';
 import Todo from './Todo';
 
@@ -26,7 +26,6 @@ class TodoList extends Component {
   @action
   handleFormSubmit = e => {
     this.props.TodoListStore.addTodo(this.newTodoTitle);
-    console.log(this.props.TodoListStore.todos);
     e.preventDefault();
 
     this.newTodoTitle = "";

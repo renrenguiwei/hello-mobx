@@ -8,7 +8,6 @@ class Topic extends Component {
     this.props.TopicStore.loadTopics()
   }
   render() {
-    console.log(this.props);
     const store = this.props.TopicStore;
     let data;
     if (store.error) {

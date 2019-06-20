@@ -1,17 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { inject, observer } from 'mobx-react';
+import StarRatingComponent from 'react-star-rating-component';
 
 function Review({ data }) {
   return (
     <li className="list-group-item">
       <div className="float-left">{ data.review }</div>
-      <div className="float-right">1</div>
+      <div className="float-right">
+        <StarRatingComponent name="reviewRate" value={ data.stars } starCount={ data.stars } />
+      </div>
     </li>
   )
 }
 
 function Reviews() {
-  console.log(this.props.ReviewStore);
   return (
     <div className="reviewsWrapper">
       <div className="row">

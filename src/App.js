@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { observer, inject } from "mobx-react"
 import DevTools from 'mobx-react-devtools';
-import Fun from './Fun';
 import TodoList from './components/TodoList';
 import Topic from './components/Topic';
 import { compose } from 'recompose';
@@ -24,7 +22,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('render');
     return (
       <div className="container">
         <ReviewApp />

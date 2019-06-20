@@ -63,7 +63,6 @@ class TopicStore {
       this.topics = json.data;
       this.loading = false;
     } catch (err) {
-      console.log(err.message);
       this.error = err.message;
     }
   })
