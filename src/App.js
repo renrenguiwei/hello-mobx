@@ -7,6 +7,7 @@ import Fun from './Fun';
 import TodoList from './components/TodoList';
 import Topic from './components/Topic';
 import { compose } from 'recompose';
+import ReviewApp from './components/ReviewApp';
 
 // @inject('BirdStore', 'TodoListStore')
 // @observer
@@ -25,7 +26,8 @@ class App extends Component {
   render() {
     console.log('render');
     return (
-      <div className="App">
+      <div className="container">
+        <ReviewApp />
         <DevTools />
         <header className="App-header">
           <Topic />
