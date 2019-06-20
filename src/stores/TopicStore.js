@@ -20,7 +20,7 @@ class TopicStore {
 
   // 2
   loadTopicsInline() {
-    fetch("https://cnodejs.org/api/v1/topics1")
+    fetch("https://cnodejs.org/api/v1/topics")
       .then(response => response.json())
       .then(({ data }) => {
         runInAction(() => {
@@ -37,7 +37,7 @@ class TopicStore {
   // 3
   loadTopicsAsync = async () => {
     try {
-      const response = await fetch("https://cnodejs.org/api/v1/topics1");
+      const response = await fetch("https://cnodejs.org/api/v1/topics");
       const json = await response.json();
 
       runInAction(() => {

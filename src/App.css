@@ -17,6 +17,15 @@
   pointer-events: none;
 }
 
+.dashboardSection {
+  margin-top: 50px;
+}
+
+.reviewsWrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
