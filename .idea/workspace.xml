@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ba62a05-f9ac-4534-9cf9-451fe2ed6524" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/BirdStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/BirdStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ij46zl7kL6Mz48bCg2VDvuth8W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/stores" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/stores" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ba62a05-f9ac-4534-9cf9-451fe2ed6524" name="Default Changelist" comment="" />
+      <created>1602407497116</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602407497116</updated>
+      <workItem from="1602407498567" duration="2600000" />
+      <workItem from="1602462551126" duration="30684000" />
+      <workItem from="1602551580484" duration="3348000" />
+      <workItem from="1602554974392" duration="7533000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="508" y="223" key="FileChooserDialogImpl" timestamp="1602489501968">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="508" y="223" key="FileChooserDialogImpl/0.23.1440.877/-259.-1057.1920.1057@0.23.1440.877" timestamp="1602489501968" />
+    <state width="1419" height="223" key="GridCell.Tab.0.bottom" timestamp="1602414546923">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="223" key="GridCell.Tab.0.bottom/0.23.1440.877/-269.-1057.1920.1057@0.23.1440.877" timestamp="1602414546923" />
+    <state width="1419" height="223" key="GridCell.Tab.0.center" timestamp="1602414546922">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="223" key="GridCell.Tab.0.center/0.23.1440.877/-269.-1057.1920.1057@0.23.1440.877" timestamp="1602414546922" />
+    <state width="1419" height="223" key="GridCell.Tab.0.left" timestamp="1602414546919">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="223" key="GridCell.Tab.0.left/0.23.1440.877/-269.-1057.1920.1057@0.23.1440.877" timestamp="1602414546919" />
+    <state width="1419" height="223" key="GridCell.Tab.0.right" timestamp="1602414546923">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="223" key="GridCell.Tab.0.right/0.23.1440.877/-269.-1057.1920.1057@0.23.1440.877" timestamp="1602414546923" />
+    <state x="236" y="80" width="997" height="820" key="SettingsEditor" timestamp="1602555280663">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="236" y="80" width="997" height="820" key="SettingsEditor/0.23.1440.877/-259.-1057.1920.1057@0.23.1440.877" timestamp="1602555280663" />
+    <state x="421" y="216" width="598" height="490" key="find.popup" timestamp="1602490815388">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="421" y="216" width="598" height="490" key="find.popup/0.23.1440.877/-259.-1057.1920.1057@0.23.1440.877" timestamp="1602490815388" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1602566331269">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/-259.-1057.1920.1057@0.23.1440.877" timestamp="1602566331269" />
+  </component>
+</project>
