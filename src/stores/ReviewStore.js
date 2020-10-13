@@ -20,7 +20,7 @@ class ReviewStore {
     let sum = 0
     // let res = this.reviewList.map(e => sum += Number(e.star)) // 回传一个阵列，不太适用处理相加的
     this.reviewList.forEach(e => sum += Number(e.star))
-    return Math.round(sum / this.reviewList.length * 100) / 100
+    return Math.round(sum / this.reviewList.length * 10) / 10
   }
 
 }
